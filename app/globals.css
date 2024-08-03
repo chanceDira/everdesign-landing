@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  background-color: white;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.Hero {
+  background-image: linear-gradient(#0000003a  , #00000046), url("/images/HeroImage.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  animation: zoomOut 10s infinite;
+}
+
+.achive {
+  background-image: linear-gradient(hsla(40, 95%, 40%, 0.833)  , #e99f0aa0), url("/images/HeroImage.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  gap: 50px;
+  animation: zoomOut 10s infinite;
+}
+.contact {
+  background-image: linear-gradient(#d1670a9c  , #d1670a9c), url("/images/HeroImage.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  animation: zoomOut 10s infinite;
+}
+
+html{
+  scroll-behavior: smooth;
+  background-color: white;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 7px;
+  background-color: #e463224d;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #E46322;
+}
+
+.WelcomeHero {
+  background-image: linear-gradient(#d1670a9c  , #d1670a9c), url("/images/bg.mp4");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  animation: zoomOut 10s infinite;
+}
