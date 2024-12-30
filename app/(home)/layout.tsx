@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     }
   }, [isLoading]);
 
-  return <main className=" hidden">{isLoading ? <SplashScreen /> : <>
+  return <main className=" ">{isLoading ? <SplashScreen /> : <>
           <Navbar />
           {children}
           <Footer />
