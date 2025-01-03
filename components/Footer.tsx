@@ -31,11 +31,10 @@ const Footer = () => {
         <div className='w-[20%] flex flex-col  lg:gap-[29px] text-[18px] xs:text-[14px]  font-normal xs:w-full gap-2'>
           <h1 className='text-secondary font-medium'>Our Services</h1>
           <div className='flex flex-col gap-4 xs:flex-row justify-around text-white text-sm font-normal'>
-            <p className=''>service</p>
-            <p className=''>service</p>
-            <p className=''>service</p>
-            <p className=''>service</p>
-            <p className=''>service</p>
+            <p className=''>Architectural Design</p>
+            <p className=''>Construction and Project Management</p>
+            <p className=''>Renovation and Remodeling</p>
+            <p className=''>Urban planning and development</p>
           </div>
         </div>
         <div className=' flex flex-col lg:gap-[29px] gap-2 text-[18px] font-normal xs:w-full mb-0 '>
