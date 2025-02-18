@@ -12,9 +12,9 @@ const SplashScreen = () => {
       data-aos="zoom-in"
       data-aos-offset="300"
       data-aos-easing="ease-in"
-      className="w-screen h-screen flex items-center justify-center bg-white"
+      className="w-screen h-screen flex items-center justify-center bg-primary"
     >
-      <Image src="/icons/logo.svg" height={150} width={150} alt="" />
+      <Image src="/icons/logo2.svg" height={150} width={150} alt="" />
     </section>
   );
 };

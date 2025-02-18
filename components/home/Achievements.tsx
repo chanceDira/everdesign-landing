@@ -18,7 +18,7 @@ const Achievements: React.FC = () => {
   }, []);
 
   return (
-    <section className='achive sm:max-h-[312px] sm:h-[312px] w-full text-white flex justify-center items-center xs:flex-col py-3'>
+    <section className='achive hidden md:block sm:max-h-[312px] sm:h-[312px] w-full text-white flex justify-center items-center xs:flex-col py-3'>
       <div className="flex flex-col gap-3">
         <h1 className="text-5xl font-bold xs:text-lg">
           <CountUp end={35} suffix="+" start={triggerCount ? 0 : undefined} duration={8}/>

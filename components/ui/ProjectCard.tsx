@@ -27,7 +27,7 @@ const MyWorkCard: React.FC<workProps> = ({
           alt={title}
           width={388}
           height={492}
-          className="rounded-md transition-transform duration-500 group-hover:scale-105 cursor-pointer"
+          className="rounded-md h-[400px] object-cover transition-transform duration-500 group-hover:scale-105 cursor-pointer"
           onClick={onShowModal} // Trigger modal on image click
         />
         {/* Overlay on hover */}

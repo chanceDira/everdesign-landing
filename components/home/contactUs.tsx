@@ -10,9 +10,9 @@ const ContactUsPage = () => {
   return (
     <section
       id="contact-us"
-      className="contact flex flex-col w-full min-h-[1171px] items-center justify-center lg:px-[119px] gap-[82px] px-4 xs:gap-8 pb-3"
+      className="contact3 flex flex-col w-full min-h-[1171px] items-center justify-center lg:px-[119px] gap-[82px] px-4 xs:gap-8 pb-3"
     >
-      <div className="flex gap-4 xs:gap-2 text-white xs:flex-col">
+      <div className="flex hdd gap-4 xs:gap-2 text-white xs:flex-col">
         <div className="flex gap-[37px] items-center lg:flex-row flex-col">
           <Image src="/icons/location2.svg" width={80} height={80} alt="logo" />
           <div className="flex flex-col gap-4">
