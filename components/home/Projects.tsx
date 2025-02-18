@@ -28,7 +28,7 @@ const Projects = () => {
       data-aos-offset="300"
       data-aos-easing="ease-in"
       id="Projects"
-      className="min-h-screen w-screen flex flex-col items-center justify-center lg:px-[119px] gap-6 px-4"
+      className="min-h-screen w-screen mt-16 flex flex-col items-center justify-center lg:px-[119px] gap-6 px-4"
     >
       <div className="flex flex-col gap-3">
         <h1 className="text-sm text-gray-700 text-center">Featured Projects</h1>
@@ -38,7 +38,7 @@ const Projects = () => {
       </div>
       <div className="flex flex-col gap-5 max-w-[1440px]">
         <h1 className="text-lg font-semibold">All Projects</h1>
-        <div className="flex gap-10 xs:flex-col">
+        <div className="flex gap-10 flex-col md:flex-row">
           {projects.map((project, i) => (
             <MyWorkCard
               key={i}

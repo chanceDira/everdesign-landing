@@ -15,10 +15,10 @@ const Services = () => {
     data-aos="fade"
     data-aos-offset="300"
     data-aos-easing="ease-in"
-     id="services" className="min-h-screen w-screen flex flex-col items-center justify-center lg:px-[119px] mb-[200px] px-4">
-      <h1 className="text-sm text-gray-700">Services</h1>
-      <h1 className="font-bold mb-[80px] text-4xl">Providing quality services</h1>
-      <div className="sm:grid sm:grid-cols-4 gap-5  flex flex-col max-w-[1440px]">
+     id="services" className="min-h-screen w-screen pt-10 flex flex-col items-center justify-center bg-primary lg:px-[119px] mb-[200px] px-4">
+      <h1 className="text-sm text-secondary">Services</h1>
+      <h1 className="font-bold mb-[80px] text-4xl text-white">Providing quality services</h1>
+      <div className="sm:grid sm:grid-cols-3 gap-5  flex flex-col max-w-[1440px]">
         {services.map((service: any, i: number) => (
           <ServicesCard
             img={service.img}

@@ -53,13 +53,11 @@ const ContactOne = () => {
   };
 
   return (
-    <div className='bg-secondary rounded-r-[10px] p-[40px] text-white flex flex-col gap-14 w-full'>
+    <div className='bg-[#F8F8F8] w-11/12 md:w-1/2 rounded-r-[10px] p-[60px] text-white flex flex-col gap-14'>
       <div className="flex flex-col gap-4">
-        <h1 className='text-white text-2xl font-semibold'>Get In Touch</h1>
-        <p className='text-[14px] leading-[26px] font-normal'>
-          Personal Tax Planning: Our tax consultants work closely with individuals
-          to develop comprehensive tax plans tailored to their unique financial
-          situations.
+        <h1 className='text-black text-4xl font-semibold'>Get In Touch</h1>
+        <p className='text-[24px] text-black leading-[26px] font-light'>
+        Personal Tax Planning: Our tax consultants work closely with individuals to develop comprehensive tax plans tailored to their unique financial situations.
         </p>
       </div>
       <form onSubmit={handleSubmit} className='flex flex-col gap-[17px] text-slate-700'>
@@ -70,7 +68,7 @@ const ContactOne = () => {
             name='firstname'
             value={formData.firstname}
             onChange={handleChange}
-            className='bg-[#F6F6F6] py-3 px-3 rounded-lg w-full'
+            className='bg-[#ffffff] py-3 px-3 rounded-lg w-full'
           />
           <input
             type='text'
@@ -78,7 +76,7 @@ const ContactOne = () => {
             name='lastname'
             value={formData.lastname}
             onChange={handleChange}
-            className='bg-[#F6F6F6] py-3 px-3 rounded-lg w-full '
+            className='bg-[#ffffff] py-3 px-3 rounded-lg w-full '
           />
         </div>
         <div className='flex gap-[22px] w-full xs:flex-col'>
@@ -88,13 +86,13 @@ const ContactOne = () => {
             name='email'
             value={formData.email}
             onChange={handleChange}
-            className='bg-[#F6F6F6] py-3 px-3 rounded-lg w-full'
+            className='bg-[#ffffff] py-3 px-3 rounded-lg w-full'
           />
           <input
             type='text'
             placeholder='Enter Phone Number'
             name='telephone'
-            className='bg-[#F6F6F6] py-3 px-3 rounded-lg w-full'
+            className='bg-[#ffffff] py-3 px-3 rounded-lg w-full'
           />
         </div>
         <input
@@ -103,16 +101,16 @@ const ContactOne = () => {
           name='subject'
           value={formData.subject}
           onChange={handleChange}
-          className='bg-[#F6F6F6] py-3 px-3 rounded-lg'
+          className='bg-[#ffffff] py-3 px-3 rounded-lg'
         />
         <textarea
           name='message'
           placeholder='Enter Message'
           value={formData.message}
           onChange={handleChange}
-          className='bg-[#F6F6F6] h-[134px] px-4 py-4 rounded-lg'
+          className='bg-[#ffffff] h-[134px] px-4 py-4 rounded-lg'
         />
-        <button type='submit' className='glassmorphism text-white py-4 rounded-[10px]'>
+        <button type='submit' className='glassmorphismx bg-secondary text-white py-4 rounded-[10px]'>
           {loading ? 'Sending...' : 'SUBMIT'}
         </button>
       </form>
