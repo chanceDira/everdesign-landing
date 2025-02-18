@@ -35,12 +35,12 @@ const Navbar = () => {
     <section
       className={`${
         scrolled ? "drop-shadow" : ""
-      } w-screen sm:h-[80px] flex lg:px-[119px] items-center justify-between fixed bg-white z-50 px-6 xs:h-[90px]`}
+      } w-screen sm:h-[80px] flex lg:px-[119px] items-center justify-between bg-primary fixed bgpr z-50 px-6 xs:h-[90px]`}
     >
       <Link href="/" onClick={handleLinkClick}>
-        <Image src="/icons/logo.svg" alt="" width={118.5} height={52}  className=""/>
+        <Image src="/icons/logo2.svg" alt="" width={118.5} height={52}  className=""/>
       </Link>
-      <div className="flex sm:gap-4 text-sm items-center xs:hidden  gap-5">
+      <div className="md:flex sm:gap-4 text-sm text-white font-light items-center hidden md:block  gap-5">
         {navLinks.map((item) => {
           const activeLink =
             pathname === item.href || pathname.startsWith(item.href);
@@ -48,25 +48,23 @@ const Navbar = () => {
             <Link
               href={item.href}
               key={item.label}
-              className={clsx(`group hover:text-primary-2 `, {
+              className={clsx(`group hover:text-primary-2 hover:text-secondary `, {
                 "text-primary-2": activeLink,
               })}
             >
               {item.label}
-              <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-primary-2"></span>
+              <span className="block max-w-0 group-hover:max-w-full  transition-all duration-500 h-0.5 bg-primary-2"></span>
             </Link>
           );
         })}
         <div className="ml-9 flex gap-3">
-        <button className="bg-slate-800 py-2 px-6 text-white rounded-[12px] hover:opacity-60 text-sm font-semibold">
+        <button className=" py-2 px-6 text-white border rounded-md border-white hover:opacity-60 text-sm font-semibold">
           <Link href="https://www.everdesigngroup.rw">Real Estate</Link>
         </button>
-        <button className="bg-primary py-2 px-6 text-white rounded-xl hover:opacity-60 text-sm font-semibold">
-          <Link href="#contact-u">Contact</Link>
-        </button>
+
         </div>
       </div>
-      <div className="flex items-center flex-row-reverse sm:hidden">
+      <div className="flex items-center flex-row-reverse md:hidden">
         <button
           className="inline-flex items-center justify-center p-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-inset"
           onClick={handleToggle}
@@ -104,7 +102,7 @@ const Navbar = () => {
           )}
         </button>
         {isClicked && (
-          <div className="absolute z-20 flex flex-col sm:hidden px-10 py-10 bg-white right-0 top-[57px] rounded-l-lg w-full items-center">
+          <div className="absolute z-20 flex flex-col sm:hidden px-10 py-10  bg-primary text-white right-0 top-[57px] rounded-l-lg w-full items-center">
             {navLinks.map((item) => {
               const activeLink =
                 pathname === item.href || pathname.startsWith(item.href);

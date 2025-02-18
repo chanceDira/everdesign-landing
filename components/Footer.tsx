@@ -7,10 +7,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className='bg-[#2B2D2D]  w-full  flex flex-col items-center'>
-      <div className='flex text-white max-w-[1440px] lg:px-[100px] py-[119px] items-start justify-between border-b-2 border-gray-300 px-4 lg:flex-row flex-col gap-9'>
-        <div className='w-[35%] flex flex-col gap-6 text-sm xs:w-full'>
-          <Image src='/icons/logo.svg' alt='' width={118.5} height={52.5} />
+    <footer className=' bg-primary  w-full  flex flex-col items-center'>
+      <div className='flex text-white max-w-[1440px]  lg:px-[100px] py-[119px] items-start justify-between border-b-2 border-gray-300 px-4 lg:flex-row flex-col gap-9'>
+        <div className=' w-[80%] md:w-[35%] flex flex-col gap-6 text-sm xs:w-full'>
+          <Image src='/icons/logo3.svg' alt='' width={118.5} height={52.5} />
           <h1 className='text-sm max-w-[315px]'>
             A leading cargo logistics company based in Rwanda,aims to enhance
             its online presence and streamline customer interactions through a
@@ -82,7 +82,7 @@ const Footer = () => {
       <h1 className='text-center text-white py-8 text-sm'>
         © Copyright 2024 <span className='text-secondary'>EverDesign</span>
       </h1>
-      <Link href="https://www.codiblegroup.com" target='_blank' className='text-sm font-semibold text-gray-200'>Designed by Codible Group</Link>
+      <Link href="https://www.codiblegroup.com" target='_blank' className='text-sm font-light text-gray-200'>Designed by Codible Group</Link>
       </div>
     </footer>
   );
